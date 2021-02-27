@@ -528,13 +528,13 @@ button,
 
 .loader {
   position: fixed;
+  top: 0;
+  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 100vh;
-  background-color: #ffffff;
-  z-index: 3;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -545,8 +545,10 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #ffffff;
   -webkit-transition: all 1.5s;
-  transition: all 1.5s; }
+  transition: all 1.5s;
+  z-index: 3; }
   .loader__logo {
     display: block;
     width: 70%; }
@@ -678,6 +680,8 @@ button,
               transform: rotate(45deg); }
 
 @media screen and (max-width: 768px) {
+  .header__wrapper {
+    padding: 25px 35px; }
   .nav-menu {
     position: absolute;
     top: 0;
@@ -734,29 +738,29 @@ button,
       left: 0;
       top: 0;
       display: none;
-      background-color: #2c39f2;
-      z-index: 1;
       padding-top: 25%;
+      background-color: #2c39f2;
       -webkit-transform: translateX(-100%);
               transform: translateX(-100%);
       -webkit-transition: all .8s;
-      transition: all .8s; }
+      transition: all .8s;
+      z-index: 1; }
   .main__heading {
     width: 562px;
     max-width: 100%; }
     .main__heading h1 {
-      font-family: Neue Machina;
+      margin: 0 auto;
+      font-family: "Neue Machina", "Arial", sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 96px;
       line-height: 96px;
-      color: #2c39f2;
-      margin: 0 auto; }
+      color: #2c39f2; }
   .main__info {
     width: 352px;
     margin: 0 auto; }
     .main__info h2 {
-      font-family: Neue Machina;
+      font-family: "Neue Machina", "Arial", sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 30px;
