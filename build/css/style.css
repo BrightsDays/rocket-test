@@ -630,7 +630,7 @@ button,
     font-size: 14px;
     line-height: 14px;
     color: #000000; }
-    .nav-menu__item--hyper:after {
+    .nav-menu__item--hyper::after {
       position: absolute;
       top: -2px;
       right: -10px;
@@ -644,8 +644,8 @@ button,
   width: 30px;
   height: 2px;
   background-color: #2c39f2;
-  -webkit-transition: all .7s;
-  transition: all .7s; }
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s; }
   .burger-menu::before {
     position: absolute;
     top: -8px;
@@ -655,8 +655,8 @@ button,
     height: 2px;
     content: "";
     background-color: #2c39f2;
-    -webkit-transition: all .7s;
-    transition: all .7s; }
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s; }
   .burger-menu::after {
     position: absolute;
     top: 8px;
@@ -666,8 +666,8 @@ button,
     height: 2px;
     content: "";
     background-color: #2c39f2;
-    -webkit-transition: all .7s;
-    transition: all .7s; }
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s; }
   .burger-menu--close {
     background-color: #ffffff; }
     .burger-menu--close::before {
@@ -701,12 +701,15 @@ button,
             flex-direction: column;
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
-    -webkit-transition: all .8s;
-    transition: all .8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
     z-index: -1; }
     .nav-menu__item {
       font-size: 28px;
       line-height: 28px; }
+      .nav-menu__item--hyper::after {
+        top: -10px;
+        right: -13px; }
   .burger-menu {
     display: block; } }
 
@@ -759,6 +762,9 @@ button,
   .main__info {
     width: 352px;
     margin: 0 auto; }
+    .main__info svg {
+      display: block;
+      margin: 0 auto; }
     .main__info h2 {
       font-family: "Neue Machina", "Arial", sans-serif;
       font-style: normal;

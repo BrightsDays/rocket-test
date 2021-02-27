@@ -120,6 +120,11 @@
         &__item {
             font-size: 28px;
             line-height: 28px;
+
+            &--hyper::after {
+                top: -10px;
+                right: -13px;
+            }
         }
     }
 
