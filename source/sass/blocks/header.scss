@@ -38,11 +38,11 @@
         line-height: 14px;
         color: $color-extra-black;
 
-        &--hyper:after {
+        &--hyper::after {
             position: absolute;
             top: -2px;
             right: -10px;
-            content: url('../img/svg/hyper.svg');
+            content: url("../img/svg/hyper.svg");
         }
 
         &:hover {
@@ -57,7 +57,7 @@
     width: 30px;
     height: 2px;
     background-color: $color-neon-blue;
-    transition: all .7s;
+    transition: all 0.7s;
 
     &::before {
         position: absolute;
@@ -68,7 +68,7 @@
         height: 2px;
         content: "";
         background-color: $color-neon-blue;
-        transition: all .7s;
+        transition: all 0.7s;
     }
 
     &::after {
@@ -80,7 +80,7 @@
         height: 2px;
         content: "";
         background-color: $color-neon-blue;
-        transition: all .7s;
+        transition: all 0.7s;
     }
 
     &--close {
@@ -99,6 +99,10 @@
 }
 
 @media screen and (max-width: $viewport--md) {
+    .header__wrapper {
+        padding: 25px 35px;
+    }
+
     .nav-menu {
         position: absolute;
         top: 0;
@@ -110,7 +114,7 @@
         justify-content: center;
         flex-direction: column;
         transform: translateY(-100%);
-        transition: all .8s;
+        transition: all 0.8s;
         z-index: -1;
 
         &__item {
